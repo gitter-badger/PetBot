@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 	
 	'chatterbot.ext.django_chatterbot',
-	'petbot',
+	'petbot_app',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -54,7 +54,7 @@ MIDDLEWARE_CLASSES = [
 
 ]
 
-ROOT_URLCONF = 'petbot.urls'
+ROOT_URLCONF = 'petbot_app.urls'
 
 TEMPLATES = [
     {
@@ -72,7 +72,17 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'petbot.wsgi.application'
+# ChatterBot settings
+
+CHATTERBOT = {
+    'name': 'Django ChatterBot Example',
+    'trainer': 'chatterbot.trainers.ChatterBotCorpusTrainer',
+    'training_data': [
+        'chatterbot.corpus.english.greetings'
+    ]
+}
+
+WSGI_APPLICATION = 'petbot_app.wsgi.application'
 
 
 # Database
