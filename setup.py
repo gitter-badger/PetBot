@@ -2,11 +2,11 @@ from distutils.core import setup
 
 setup(
     name='Petbot',
-    version='',
+    version='0.02',
     packages=[''],
     url='',
-    license='',
+    license='GNU',
     author='Petri',
-    author_email='',
-    description=''
+    author_email='archbang85@gmail.com',
+    description='Bot'
 )

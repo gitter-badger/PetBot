@@ -1,0 +1,17 @@
+branch-defaults:
+  master:
+    environment: PetBot-dev2
+environment-defaults:
+  LowCost-env:
+    branch: null
+    repository: null
+  PetBot-dev:
+    branch: null
+    repository: null
+global:
+  application_name: PetBot
+  default_ec2_keyname: null
+  default_platform: 64bit Amazon Linux 2016.09 v2.3.0 running Python 3.4
+  default_region: eu-west-2
+  profile: eb-cli
+  sc: git
