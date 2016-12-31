@@ -1,6 +1,6 @@
 branch-defaults:
   master:
-    environment: PetBot-dev2
+    environment: PetBot-dev
 environment-defaults:
   LowCost-env:
     branch: null
