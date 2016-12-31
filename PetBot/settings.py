@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+	'chatterbot.ext.django_chatterbot',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -48,7 +49,7 @@ MIDDLEWARE_CLASSES = [
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-	'chatterbot.ext.django_chatterbot',
+
 ]
 
 ROOT_URLCONF = 'petbot.urls'
